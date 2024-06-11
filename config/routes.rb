@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
   resources :categories, except: [:destroy]
+  # get '/patients/:id', to: 'patients#show', as: 'patient'
+
 end
